@@ -1,0 +1,39 @@
+{
+  "name": "tm-paysage-site-manager",
+  "version": "1.0.0",
+  "description": "Full-stack construction site management application",
+  "scripts": {
+    "install:backend": "cd backend && npm install",
+    "install:frontend": "cd frontend && npm install",
+    "install:all": "npm run install:backend && npm run install:frontend",
+    "dev:backend": "cd backend && npm run dev",
+    "dev:frontend": "cd frontend && npm start",
+    "dev": "concurrently \"npm run dev:backend\" \"npm run dev:frontend\"",
+    "build:backend": "cd backend && npm run build",
+    "build:frontend": "cd frontend && npm run build",
+    "build": "npm run build:backend && npm run build:frontend",
+    "lint:backend": "cd backend && npm run lint",
+    "lint:frontend": "cd frontend && npm run lint",
+    "lint": "npm run lint:backend && npm run lint:frontend",
+    "test:backend": "cd backend && npm test",
+    "test:frontend": "cd frontend && npm test",
+    "test": "npm run test:backend && npm run test:frontend",
+    "seed": "cd backend && npm run seed"
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  },
+  "keywords": [
+    "construction",
+    "management",
+    "react-native",
+    "nodejs",
+    "mongodb"
+  ],
+  "author": "TM Paysage",
+  "license": "MIT",
+  "dependencies": {
+    "expo-linear-gradient": "^14.1.5",
+    "react-native-calendars": "^1.1313.0"
+  }
+}
